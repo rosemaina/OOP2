@@ -1,0 +1,85 @@
+QUESTION ONE 
+
+Create a class called MultiplicationTable
+    --Information Stored
+        i) The multiplicationnumber, e.g.:
+            a. 3 for multiplicationtables of 3
+            b. 7 for multiplicationtables of 7
+        ii) The range from,e.g.
+            a. 13 for the multiplication tables of 3 from 13 to 27
+            b. 71 for the multiplication tables of 7 from 71 to 100
+        iii) The range to,e.g.:
+            a. 27 for the multiplication tables of 3 from 13 to 27
+            b. 100 for the multiplication tables of 7 from 71 to 100
+
+    --Methods Included
+        i) A method or set of methods to set the information to the data stored.
+        ii) A method printTable()that when called, will print the multiplication tables of the
+            multiplication number from the range from to the range to
+        iii) Themethodmain(Stringargs[])inwhichyoucreate3objectsoftypeMultiplicationTables
+             with thedetailsoutlinedinthetablebelow.Each object shouldthenbetoldtoprint itsown
+             multiplication tables by calling the method printTable() for each.
+
+             MultiplicationTable || of Range From || Range to
+                    3                    17             25
+                    17                   3              49
+                    0                    1              5
+
+
+
+QUESTION TWO
+
+public static void main(String args[]){
+    //Get all years divisible by 14 and 20
+    YearRange myFirstRange = new YearRange(1314, 2014);
+    myFirstRange.setRangeType(1);
+
+    //Get all leap years.
+    YearRange mySecondRange = new YearRange(1100, 3150);
+    mySecondRange.setRangeType(2);
+    
+    //Get all Olympic years divisible by 3
+    YearRange myThirdRange = new YearRange(1500, 1890);
+    myThirdRange.setRangeType(3);
+
+    System.out.println(“List of all years divisible by “ + myFirstRange.getFirstDivisor() + “ and “ + myFirstRange.getSecondDivisor());
+    myFirstRange.printYears();
+
+    System.out.println(“List of all leap years between ” + mySecondRange.getFirstYear() + “ and “ + mySecondRange.getSecondYear());
+    mySecondRange.printYears();
+
+    System.out.println(“List of all Olympic years between ” + myThirdRange.getFirstYear() + “ and “ + myThirdRange.getSecondYear() + “ that are divisible by “ + myThirdRange.getFirstDivisor());
+    myThirdRange.printYears();
+}
+
+Instructions
+    1. Create the class definition for YearRange and determine its datamembers and methods.
+    2. Create another class in which you have the main method outlined above.
+    3. The hints of the data members and methods required for YearRange are included in the main
+        method above.
+
+
+QUESTION THREE
+
+    Create a class called Building
+        -- Information Stored
+            i) Name of thebuilding
+            ii) Number of Floors
+            iii) Number of rooms per floor
+            iv) Colour
+
+        -- Methods Included
+            i) The method(s) necessary to set the information to the data stored.
+            ii) The methods necessary to retrieve information on the name, number of floors and number
+                of rooms in the building.
+
+        -- Expected Output
+            i) Using the class you have defined, create an array that can hold 5 buildings. Populate this array with 5 buildings, having assigned each its details.
+            ii) Using a loop through the array, print out a report such as the one below.
+
+        -- Print out
+            <<Name of building 1>> is a <<colour of building>> and has <<number of rooms>> rooms.
+            <<Name of building 2>> is a <<colour of building>> and has<<number of rooms>> rooms.
+            <<Name of building 3>> is a <<colour of building>> and has <<number ofrooms>> rooms.
+            <<Name of building 4>> is a <<colour of building>> and has <<number ofrooms>> rooms.
+            <<Name of building 5>> is a <<colour of building>> and has <<number ofrooms>> rooms.
