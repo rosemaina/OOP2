@@ -1,0 +1,14 @@
+a. Create an Abstract class called Vehicle with abstract methods accelerate, stop, and gas,
+& data of your choice (5 marks)
+
+b. Create an Interface called Automobile defining a number of logical data and methods (5
+marks)
+
+c. Create subclasses Motorcycle & Bus as children of class Vehicle overriding the necessary
+methods (5 marks)
+
+d. Create class Sedan and SportsCar using the Interface Automobile and Abstract Class
+Vehicle appropriately (5 marks)
+
+e. Create a main class and create an instance of class Sedan in its main method. Demonstrate
+method overloading and overriding using method accelerate() (10 marks)
